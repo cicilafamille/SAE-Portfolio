@@ -3,72 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio EDF - L'Entreprise</title>
+    <title>L'Entreprise - Portfolio Célia BEDFERT</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="entreprise.html">L'Entreprise</a></li>
+            <li><a href="entreprise.html" class="active">L'Entreprise</a></li>
             <li><a href="missions.html">Mes Missions</a></li>
+            <li><a href="bilans.html">Bilans</a></li>
         </ul>
     </nav>
 
-    <header>
-        <div class="logos">
-            <div class="logo-box">EDF</div>
-            <div class="logo-box">Université<br>de Caen</div>
-            <div class="logo-box">BUT R&T</div>
+<header>
+    <div class="logos">
+        <div class="logos-left">
+            <div class="logo-box">
+                <img src="edf.png" alt="Logo EDF">
+            </div>
+            <div class="logo-box">
+                <img src="unicaen.png" alt="Logo Université de Caen">
+            </div>
         </div>
-        <h1>Mon Portfolio Professionnel</h1>
-        <p class="subtitle">Alternance chez EDF - 2ème année BUT R&T</p>
-    </header>
+        
+        <div class="header-center">
+            <h1 class="main-title">Portfolio Célia BEDFERT</h1>
+            <p class="subtitle">Alternance chez EDF - 2ème année BUT Réseaux et Télécommunications</p>
+        </div>
+        
+        <div class="logos-right">
+            <div class="logo-box">
+                <img src="rt.png" alt="Logo BUT Réseaux et Télécommunications">
+            </div>
+            <div class="logo-box">
+                <img src="iut.png" alt="Logo IUT Grand Ouest Normandie">
+            </div>
+        </div>
+    </div>
+</header>
 
-    <!-- Page Entreprise -->
     <section>
-        <h2>EDF - L'Entreprise</h2>
+        <h2>EDF - Électricité de France</h2>
+        
         <div class="content-box">
             <h3>À propos d'EDF</h3>
-            <p>EDF (Électricité de France) est le premier producteur et fournisseur d'électricité en France et l'un des leaders européens de l'énergie. L'entreprise est présente sur l'ensemble de la chaîne de valeur de l'énergie : production, transport, distribution, commercialisation et services énergétiques.</p>
+            <h4>Activités d'EDF : ses chiffres clés et ses engagements</h4>
+            <p>L'entreprise a été créée en 1946 par la loi de nationalisation des 1450 entreprises françaises d'électricité et de gaz.</p>
+            <p>EDF (Électricité de France) est le premier producteur et fournisseur d'électricité en France et dans le monde.</p>
+            <p>L'entreprise intervient dans l'ensemble des processus de production, de RTE et de ENEDIS (assurant le client final en assurant l'équilibre entre l'offre et la demande).</p>
+            <p>L'entreprise produit une électricité sûre, abordable et décarbonée, dans des centrales qu'elle conçoit et exploite. EDF est le premier producteur électronucléaire mondial. Plus de 85% d'électricité produite chaque année par EDF en France est d'origine nucléaire.</p>
+            <p>EDF joue un rôle majeur dans la transition énergétique et s'efforce de développer un nouveau modèle énergétique : modèle décentralisé, plus sûr, où CO2 dus à l'électricité, plus respectueux de l'environnement et des populations. EDF développe également une activité de négoce d'énergie, en vendant ou en achetant de l'électricité en fonction des besoins et de la production.</p>
+            <p>Le parc EDF est constitué de 57 réacteurs nucléaires répartis dans 19 sites de production.</p>
+            
+            <div class="chiffres-cles">
+                <h4>Chiffre clés 2024</h4>
+                <ul>
+                    <li>118,7 milliards d'euros de chiffres d'affaires</li>
+                    <li>520,3 TWh de production nucléaire</li>
+                    <li>11,4 milliards d'euro de résultat net</li>
+                    <li>41,5 millions de clients électricité</li>
+                    <li>94% parts de la production décarbonée</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h3>Engagements</h3>
+            <p>EDF s'est engagée à atteindre la neutralité carbone en 2050.</p>
+            <p>L'entreprise a pris de nouveaux engagements concrets pour réduire ses émissions directes de gaz à effet de serre de 40% d'ici 2030 (par rapport à 2017).</p>
+            <p>Le Groupe s'engage également à réduire ses émissions indirectes de CO2, notamment celles liées aux consommations de ses clients.</p>
         </div>
 
         <div class="info-grid">
             <div class="info-card">
                 <h3>🌍 Présence Mondiale</h3>
                 <p>EDF opère dans de nombreux pays à travers le monde et emploie plus de 165 000 collaborateurs.</p>
+                <p>Présent dans plus de 30 pays sur 5 continents.</p>
             </div>
 
             <div class="info-card">
-                <h3>⚡ Expertise</h3>
-                <p>Leader dans la production d'électricité bas carbone grâce au nucléaire et aux énergies renouvelables.</p>
+                <h3>⚡ Expertise Nucléaire</h3>
+                <p>Leader mondial de l'énergie nucléaire avec 56 réacteurs en exploitation en France.</p>
+                <p>70% de la production électrique française provient du nucléaire.</p>
             </div>
 
             <div class="info-card">
                 <h3>🔬 Innovation</h3>
                 <p>Investissements majeurs dans la recherche et le développement pour la transition énergétique.</p>
+                <p>Focus sur les énergies décarbonées et le numérique.</p>
             </div>
         </div>
 
-        <div class="content-box" style="margin-top: 2rem;">
+        <div class="content-box">
+            <h3>La Centrale Nucléaire de Flamanville</h3>
+            <p>Le CNPE de Flamanville est divisé en deux localisations. Nous avons Flamanville 1 et 2 avec deux réacteurs à eau pressurisée historiques mis en service en 1985 et 1986 qui produisent 1 300 MW chacun. Nous avons aussi Flamanville 3 avec le nouvel EPR, le premier construit en France, qui a démarré en 2024. Sa puissance n'est pas encore maximale, ceci est un processus long, il produira 1 600 MW de puissance.</p>
+            <p>Durant la vie du réacteur nucléaire, le réacteur de Flamanville et de toute la tranche, un arrêt de tranche est programmé afin de réaliser certaines opérations de maintenance, le rechargement du combustible ainsi qu'à effectuer des contrôles de sûretés. Les arrêts de tranche sont réalisés tous les 12 à 18 mois pendant quelques mois. Cet arrêt de tranche est programmé pour le changement des barreaux de vapeurs et le rechargement du combustible. Pendant ces arrêts de tranche, il est important de surveiller et de garder une bonne communication. Il y a donc l'installation de caméras supplémentaires ainsi que de fortiuts vidéo.</p>
+        </div>
+
+        <div class="content-box">
+            <h3>1.2 DIGIT et l'équipe locale de Flamanville</h3>
+            <p>Mon alternance se déroule au sein d'EDF dans la centrale nucléaire de Flamanville. Au sein de cette structure, j'ai intégré le service DIGIT qui assure la gestion, l'exploitation et la maintenance des infrastructures informatiques et télécom locales de la centrale.</p>
+            
+            <p>DIGIT est une Direction nouvellement créée le 1er janvier 2025 au sein de la DTEO (Direction Transformation et Efficacité Opérationnelle) dans le cadre de la réorganisation de la filière informatique.</p>
+            
+            <p>En tant qu'opérateur IT (Informatique et Télécommunication) dans DIGIT interne à EDF connaît le groupe et les métiers de l'ensemble du Groupe (EDF SA et filiales, métiers industriels et tertiaires), étant à leur service et acteur central de l'industrialisation du numérique du Groupe. De plus en opérateur IT agit d'un bout à bout d'un réseau d'environnement, des métiers industriels jusqu'au comparant de SI, avec des services optimistes de bout en bout, du poste de travail jusqu'au comparant de l'infrastructure. Par ailleurs, il est orienté clients et utilisateurs, avec des services simples à utiliser, ainsi qu'une écoute permanente, une proximité et un appui permettant une meilleure expérience et réponse aux besoins simples, qui sont liés aux évolutions de contexte ou de technologie.</p>
+        </div>
+
+        <div class="content-box organisation-digit">
+            <h3>Organisation de DIGIT</h3>
+            <p>L'USI (Unité Services Métiers) a pour mission d'équiper les services informatiques et télécommunications, qui répondent aux besoins du Groupe sur son cœur de métier, de services de télécommunications adaptés et performants afin de répondre au besoin fonctionnel d'un client en intégrant ses évolutions techniques. L'USI s'organise avec un triptyque MOA/MOE et CMPSI (Cellule de pilotage de projet ou d'ouvrage).</p>
+            
+            <p>Au sein du CNPE de Flamanville je me situe précisément dans la branche DTEO qui signifie Direction Transformation Efficacité Opérationnelle et qui gère la transformation sur les sites dans la centrale nucléaire de Flamanville. Au sein de site nous travaillons avec tous les corps de métiers. À Flamanville il n'existe qu'une seule branche DTEO qui s'occupe des différents réseaux et équipements (réseau, téléphonie, caméra, etc.).</p>
+            
+            <h4>L'équipe DIGIT de FLAMANVILLE</h4>
+            <p>L'équipe DIGIT se compose d'un manager, d'un chef de projet bord, de deux opérateurs IT qui sont mes principaux collègues. L'un étant l'ingénieur de service, des plans pilotes, d'exploitation, d'un appui, d'un apportit chargé d'affaire et de mainteneurs en tant qu'expert de pilote de contrôles ou de renouvellement.</p>
+        </div>
+
+        <div class="content-box">
+            <h3>Organisation d'un besoin jusqu'au service</h3>
+            <p>Nous avons différents acteurs tel que la MOA et la MOE (Maîtrise d'Ouvrage et Maîtrise d'Œuvre).</p>
+            
+            <p>La maîtrise d'ouvrage traduit une demande d'un service en fonction du catalogue de DIGIT. Elle exprime un besoin et pas une solution car c'est à nous d'apporter la solution adaptée pour l'entreprise et de la mettre en œuvre.</p>
+            
+            <p>La maîtrise d'œuvre (DIGIT) peut réaliser les actions ou bien sous-traiter des entités d'activités complètes via nos prestataires (Enedis, Econocom, Omexom, etc.).</p>
+            
+            <p>Tout d'abord il y a une étude par la MOA pour savoir si la demande est faisable ou non. Ensuite il y a une étape de développement afin de répondre à la solution qui aura été choisie par nos soins pour apporter la réalisation de la solution par nous allons nous sous-traitant. À la fin de tout ce processus il y a la durée de la semaine.</p>
+            
+            <p>Pour traiter ou envoyer les différentes demandes on utilise plusieurs outils tel que ITZMI qui est un site de ticketing qui permet de nombreuses actions comme la consultation de tickets de nombreux acteurs d'incidents qui peuvent être ouverts, en cours de traitement, en attente ou clôturés. Ou bien on utilise aussi WIZMI, c'est un site qui a un large catalogue pour réaliser une demande d'intérêt ou d'incidents.</p>
+            
+            <div class="exemple-box">
+                <h4>Exemple :</h4>
+                <p>Un service du site (ex : Chaudronnerie) peut exprimer un besoin (ex : Arrivée d'un nouvel utilisateur) et demander à la MOA un ordinateur portable et un téléphone. Celle-ci traduit ce souhait disponible au catalogue DIGIT par une demande ITZMI qui est alors envoyée vers la MOE DIGIT qui pilotera le fournisseur OMEXOM pour la réalisation du service.</p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h3>Mon service : Informatique et Systèmes</h3>
+            <p>J'évolue au sein du service informatique de la centrale de Flamanville, qui a pour mission d'assurer la disponibilité, la performance et la sécurité des systèmes d'information nécessaires au fonctionnement de la centrale.</p>
+            
+            <h4>Missions du service :</h4>
+            <ul>
+                <li><strong>Administration des infrastructures :</strong> Gestion des réseaux, des serveurs et des équipements informatiques de la centrale</li>
+                <li><strong>Maintenance préventive et corrective :</strong> Opérations régulières de mise à jour et d'intervention sur les systèmes critiques</li>
+                <li><strong>Cybersécurité :</strong> Protection des systèmes d'information contre les menaces, application des politiques de sécurité</li>
+                <li><strong>Support utilisateur :</strong> Accompagnement des collaborateurs dans l'utilisation des outils informatiques</li>
+                <li><strong>Gestion de projets :</strong> Déploiement de nouvelles solutions, modernisation des infrastructures</li>
+            </ul>
+
+            <h4>Positionnement dans l'organisation :</h4>
+            <p>Le service informatique est rattaché à la direction du site et travaille en étroite collaboration avec les équipes d'exploitation, de maintenance et de sûreté. Dans un environnement nucléaire, la disponibilité et la sécurité des systèmes informatiques sont cruciales pour le bon fonctionnement de la centrale.</p>
+        </div>
+
+        <div class="content-box">
             <h3>Valeurs d'EDF</h3>
             <ul>
-                <li><strong>Responsabilité :</strong> Engagement pour un avenir énergétique durable</li>
-                <li><strong>Excellence :</strong> Qualité et performance dans tous les domaines</li>
-                <li><strong>Solidarité :</strong> Accès à l'énergie pour tous</li>
-                <li><strong>Innovation :</strong> Solutions énergétiques de demain</li>
+                <li><strong>Responsabilité :</strong> Engagement pour un avenir énergétique durable et sûr, respect des normes de sûreté nucléaire les plus exigeantes</li>
+                <li><strong>Excellence :</strong> Qualité et performance dans tous les domaines, formation continue des collaborateurs</li>
+                <li><strong>Solidarité :</strong> Accès à l'énergie pour tous, accompagnement des clients en difficulté</li>
+                <li><strong>Innovation :</strong> Développement des solutions énergétiques de demain, digitalisation des processus</li>
             </ul>
         </div>
 
         <div class="content-box">
-            <h3>Mon service</h3>
-            <p>[Décrivez ici le service dans lequel vous travaillez, son rôle au sein d'EDF, et comment il s'inscrit dans la stratégie globale de l'entreprise]</p>
+            <h3>Mon rôle et mes responsabilités</h3>
+            <p>En tant qu'alternante au sein du service informatique, j'interviens sur différentes typologies de missions :</p>
+            <ul>
+                <li>Opérations de maintenance préventive sur les postes de travail isolés du réseau</li>
+                <li>Installation et configuration d'équipements réseau (caméras de supervision, switches)</li>
+                <li>Audits de conformité des installations informatiques</li>
+                <li>Gestion du Shadow IT et traitement des demandes via l'outil GLPI</li>
+            </ul>
+            <p>Au fil de l'année, j'ai gagné en autonomie sur les opérations de maintenance courante, tout en développant ma compréhension des enjeux de cybersécurité dans un environnement industriel critique.</p>
+        </div>
+
+        <div class="content-box">
+            <h3>Lien avec mon projet professionnel</h3>
+            <p>Cette alternance chez EDF s'inscrit parfaitement dans mon projet professionnel orienté vers l'administration de systèmes d'information sécurisés. Le contexte nucléaire impose des contraintes de sécurité et de traçabilité particulièrement élevées, ce qui me permet de développer une expertise reconnue dans ce domaine.</p>
+            <p>Les compétences acquises en maintenance préventive, audit terrain et gestion de la cybersécurité constituent des atouts majeurs pour mon insertion professionnelle future, que ce soit dans le secteur de l'énergie ou dans d'autres secteurs d'activité nécessitant des infrastructures critiques.</p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 - Portfolio EDF | Réalisé dans le cadre de l'alternance en BUT Réseaux et Télécommunications</p>
-        <p>Université de Caen Normandie</p>
+        <p>&copy; 2025 - Portfolio Célia BEDFERT | Réalisé dans le cadre de l'alternance en BUT Réseaux et Télécommunications</p>
+        <p>IUT Grand Ouest Normandie - Campus 3 - Ifs</p>
     </footer>
 </body>
 </html>

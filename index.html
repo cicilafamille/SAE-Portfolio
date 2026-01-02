@@ -3,72 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio EDF - Accueil</title>
+    <title>Portfolio Célia BEDFERT - BUT R&T EDF</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html" class="active">Accueil</a></li>
             <li><a href="entreprise.html">L'Entreprise</a></li>
             <li><a href="missions.html">Mes Missions</a></li>
+            <li><a href="bilans.html">Bilans</a></li>
         </ul>
     </nav>
 
     <header>
         <div class="logos">
-            <div class="logo-box">EDF</div>
-            <div class="logo-box">Université<br>de Caen</div>
-            <div class="logo-box">BUT R&T</div>
+            <div class="logos-left">
+                <div class="logo-box">
+                    <img src="edf.png" alt="Logo EDF">
+                </div>
+                <div class="logo-box">
+                    <img src="unicaen.png" alt="Logo Université de Caen">
+                </div>
+            </div>
+            
+            <div class="header-center">
+                <h1 class="main-title">Portfolio Célia BEDFERT</h1>
+                <p class="subtitle">Alternance chez EDF - 2ème année BUT Réseaux et Télécommunications</p>
+            </div>
+            
+            <div class="logos-right">
+                <div class="logo-box">
+                    <img src="rt.png" alt="Logo BUT Réseaux et Télécommunications">
+                </div>
+                <div class="logo-box">
+                    <img src="iut.png" alt="Logo IUT Grand Ouest Normandie">
+                </div>
+            </div>
         </div>
-        <h1>Mon Portfolio Professionnel</h1>
-        <p class="subtitle">Alternance chez EDF - 2ème année BUT R&T</p>
     </header>
 
-    <!-- Page d'accueil -->
-    <section>
-        <h2>Présentation</h2>
-        <div class="content-box">
-            <h3>Bonjour, je suis Célia BEDFERT</h3>
-            <p>Étudiante en 2ème année de BUT Réseaux et Télécommunications à l'Université de Caen, en parrallèle je réalise mon alternance au sein d'EDF à la centrale nucléaire de FLAMANVILLE.</p>
+    <section class="about-section">
+        <div class="profile-container">
+            <div class="profile-photo">
+                <div class="photo-placeholder">CB</div>
+            </div>
+            <div class="profile-content">
+                <h2>À propos de moi</h2>
+                <div class="content-box">
+                    <p>Étudiante en 2ème année de BUT Réseaux et Télécommunications à l'IUT Grand Ouest Normandie, je réalise mon alternance au sein d'EDF à la centrale nucléaire de Flamanville.</p>
+                    <p>Ce portfolio présente mon parcours professionnel, les missions réalisées en entreprise et mon évolution dans le développement des compétences du référentiel BUT R&T.</p>
+                </div>
+            </div>
         </div>
 
         <div class="info-grid">
             <div class="info-card">
                 <h3>📚 Formation</h3>
                 <p><strong>BUT Réseaux et Télécommunications</strong></p>
-                <p>Université de Caen Normandie, campus 3 IFS</p>
+                <p>Parcours Cybersécurité</p>
+                <p>IUT Grand Ouest Normandie - Ifs</p>
+                <p>Campus 3</p>
                 <p>2ème année - En alternance</p>
             </div>
 
             <div class="info-card">
                 <h3>💼 Alternance</h3>
-                <p><strong>EDF</strong></p>
-                <p>Rythme : [Votre rythme d'alternance]</p>
-                <p>Depuis : [Date de début]</p>
+                <p><strong>EDF - Centrale Nucléaire de Flamanville</strong></p>
+                <p>Service Informatique</p>
+                <p>Maintenance et administration des systèmes</p>
+                <p>Depuis septembre 2024</p>
             </div>
 
             <div class="info-card">
-                <h3>🎯 Objectifs</h3>
-                <p>Développer mes compétences en réseaux et télécommunications dans un environnement professionnel d'envergure internationale.</p>
+                <h3>🎯 Objectifs professionnels</h3>
+                <p>Développer mes compétences en administration réseau et cybersécurité dans un environnement industriel critique.</p>
+                <p>Acquérir une expertise en maintenance de systèmes informatiques sécurisés.</p>
             </div>
         </div>
 
-        <div class="content-box" style="margin-top: 2rem;">
-            <h3>Compétences</h3>
-            <ul>
-                <li>Administration réseaux et systèmes</li>
-                <li>Cybersécurité</li>
-                <li>Télécommunications</li>
-                <li>Développement web</li>
-                <li>Gestion de projets</li>
-            </ul>
+        <div class="content-box competences-box">
+            <h3>Compétences développées</h3>
+            <div class="competences-grid">
+                <div class="competence-item">
+                    <h4>RT1 - Administrer les réseaux et l'Internet</h4>
+                    <p>Configuration et maintenance des équipements réseau, dépannage, virtualisation</p>
+                </div>
+                <div class="competence-item">
+                    <h4>RT2 - Connecter les entreprises et les usagers</h4>
+                    <p>Installation de systèmes de transmission, supervision vidéo COPAT</p>
+                </div>
+                <div class="competence-item">
+                    <h4>RT3 - Créer des outils informatiques pour les R&T</h4>
+                    <p>Scripts d'automatisation, gestion de bases de données</p>
+                </div>
+                <div class="competence-item">
+                    <h4>Cyber1 - Administrer un SI sécurisé</h4>
+                    <p>Mise à jour de sécurité, audit de conformité, gestion antivirus</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box projection-box">
+            <h3>Projection professionnelle</h3>
+            <p>Mon expérience chez EDF m'a permis de découvrir les enjeux de la cybersécurité dans un environnement industriel sensible. Je souhaite poursuivre dans ce domaine en me spécialisant dans l'administration de systèmes d'information sécurisés, idéalement dans le secteur de l'énergie ou des infrastructures critiques.</p>
+            <p>Les missions d'audit terrain et de maintenance préventive m'ont particulièrement intéressée, car elles allient compétences techniques et rigueur méthodologique indispensables dans les environnements à haute exigence de sécurité.</p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 - Portfolio EDF | Réalisé dans le cadre de l'alternance en BUT Réseaux et Télécommunications</p>
-        <p>Université de Caen Normandie</p>
+        <p>&copy; 2025 - Portfolio Célia BEDFERT | Réalisé dans le cadre de l'alternance en BUT Réseaux et Télécommunications</p>
+        <p>IUT Grand Ouest Normandie - Campus 3 - Ifs</p>
     </footer>
 </body>
 </html>

@@ -8,6 +8,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
+    background: #f5f5f5;
 }
 
 /* Navigation */
@@ -26,6 +27,7 @@ nav ul {
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+    padding: 0 1rem;
 }
 
 nav a {
@@ -35,11 +37,13 @@ nav a {
     font-size: 1.1rem;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: all 0.3s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
     background: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
 }
 
 /* Header avec logos */
@@ -47,36 +51,66 @@ header {
     background: linear-gradient(135deg, #0055A4, #0072CE);
     color: white;
     padding: 3rem 2rem;
-    text-align: center;
 }
 
 .logos {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    gap: 3rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logos-left,
+.logos-right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.logos-left {
+    justify-content: flex-end;
+}
+
+.logos-right {
+    justify-content: flex-start;
+}
+
+.header-center {
+    text-align: center;
+    padding: 0 2rem;
 }
 
 .logo-box {
     background: white;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    min-width: 150px;
-    height: 100px;
+    min-width: 120px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
-    color: #0055A4;
-    font-size: 1.2rem;
+    transition: transform 0.3s ease;
 }
 
-h1 {
+.logo-box img {
+    max-width: 100%;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo-box:hover {
+    transform: scale(1.05);
+}
+
+h1.main-title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .subtitle {
@@ -89,6 +123,8 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 4rem 2rem;
+    background: white;
+    min-height: 60vh;
 }
 
 h2 {
@@ -99,27 +135,125 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
+h3 {
+    color: #0055A4;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    color: #0072CE;
+    margin: 1rem 0 0.5rem 0;
+}
+
+h5 {
+    color: #333;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem 0;
+}
+
+/* Chiffres clés */
+.chiffres-cles {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.chiffres-cles h4 {
+    color: #0055A4;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.chiffres-cles ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.chiffres-cles li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.chiffres-cles li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #0072CE;
+    font-weight: bold;
+}
+
+/* Organisation DIGIT */
+.organisation-digit {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.organisation-digit h4 {
+    color: #0055A4;
+    margin-top: 1.5rem;
+}
+
+/* Exemple box */
+.exemple-box {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border-left: 4px solid #0072CE;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.exemple-box h4 {
+    color: #0055A4;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.exemple-box p {
+    margin: 0;
+    font-style: italic;
+}
+
+/* Content Box */
 .content-box {
     background: #f8f9fa;
     padding: 2rem;
     border-radius: 10px;
     margin-bottom: 2rem;
     border-left: 5px solid #0055A4;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
+.content-box p {
+    margin-bottom: 1rem;
+}
+
+.content-box ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content-box li {
+    margin-bottom: 0.5rem;
+}
+
+/* Info Grid */
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
 .info-card {
     background: white;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    transition: all 0.3s ease;
+    border-top: 4px solid #0055A4;
 }
 
 .info-card:hover {
@@ -130,30 +264,341 @@ h2 {
 .info-card h3 {
     color: #0055A4;
     margin-bottom: 1rem;
+    font-size: 1.3rem;
 }
 
-/* Missions */
-.mission-item {
-    background: white;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-radius: 10px;
-    border-left: 5px solid #0055A4;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-
-.mission-item h3 {
-    color: #0055A4;
+.info-card p {
     margin-bottom: 0.5rem;
 }
 
-.mission-item ul {
+/* Page d'accueil - Profile */
+.about-section {
+    padding: 3rem 2rem;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    align-items: start;
+    max-width: 100%;
+}
+
+.profile-photo {
+    text-align: center;
+}
+
+.photo-placeholder {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0055A4, #0072CE);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.profile-content h2 {
+    margin-top: 0;
+}
+
+.competences-box {
+    margin-top: 2rem;
+}
+
+.competences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.competence-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #0072CE;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.competence-item h4 {
+    color: #0055A4;
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.competence-item p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.projection-box {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+/* Missions - Accordéons */
+.mission-accordion {
+    margin-bottom: 2rem;
+}
+
+.mission-toggle {
+    width: 100%;
+    background: linear-gradient(135deg, #0055A4, #0072CE);
+    color: white;
+    padding: 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.mission-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(0,85,164,0.3);
+}
+
+.mission-toggle-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.mission-title-wrapper {
+    flex: 1;
+}
+
+.mission-number {
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0.3;
+    margin-right: 1rem;
+}
+
+.mission-badge-accordion {
+    background: rgba(255,255,255,0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.mission-arrow {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    margin-left: 1rem;
+}
+
+.mission-toggle.active .mission-arrow {
+    transform: rotate(180deg);
+}
+
+.mission-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.mission-content.active {
+    max-height: 10000px;
+    transition: max-height 1s ease;
+}
+
+.mission-content-inner {
+    padding: 2rem;
+}
+
+/* Missions (ancienne version - pour référence) */
+.mission-item {
+    background: white;
+    padding: 0;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.mission-header {
+    background: linear-gradient(135deg, #0055A4, #0072CE);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.mission-header h3 {
+    color: white;
+    margin: 0;
+    flex: 1;
+}
+
+.mission-badge {
+    background: rgba(255,255,255,0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.mission-section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.mission-section:last-child {
+    border-bottom: none;
+}
+
+.mission-section h4 {
+    color: #0055A4;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.mission-section h5 {
+    color: #0072CE;
+    margin: 1.5rem 0 0.8rem 0;
+    font-size: 1.1rem;
+}
+
+.mission-section ul {
     margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.mission-section li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.mission-section p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+/* Compétences dans les missions */
+.competences-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.competence-badge {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #0072CE;
+}
+
+.competence-badge strong {
+    color: #0055A4;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.competence-badge ul {
+    margin-left: 1.5rem;
     margin-top: 0.5rem;
 }
 
-.mission-item li {
-    margin-bottom: 0.5rem;
+/* Page Bilans */
+.intro-bilans {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    border-left: 5px solid #0055A4;
+}
+
+.bilan-competence {
+    background: white;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.competence-header {
+    background: linear-gradient(135deg, #0055A4, #0072CE);
+    color: white;
+    padding: 2rem;
+}
+
+.competence-header h3 {
+    color: white;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.competence-header .niveau {
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.bilan-content {
+    padding: 2rem;
+}
+
+.bilan-content h4 {
+    color: #0055A4;
+    margin: 2rem 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.bilan-content ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.bilan-content li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.bilan-content p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.bilan-global {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 3rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+
+.bilan-global h3 {
+    color: #0055A4;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.bilan-global h4 {
+    color: #0055A4;
+    margin-top: 1.5rem;
 }
 
 /* Footer */
@@ -162,26 +607,254 @@ footer {
     color: white;
     text-align: center;
     padding: 2rem;
-    margin-top: 4rem;
+    margin-top: 0;
 }
 
-/* Responsive */
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .logos {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .logos-left,
+    .logos-right {
+        justify-content: center;
+    }
+
+    .header-center {
+        order: -1;
+    }
+
+    .logos-left {
+        order: 1;
+    }
+
+    .logos-right {
+        order: 2;
+    }
+}
+
+@media (max-width: 992px) {
+    section {
+        padding: 3rem 1.5rem;
+    }
+
+    .profile-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .competences-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .logos-left,
+    .logos-right {
+        gap: 0.8rem;
+    }
+    
+    .logo-box {
+        min-width: 110px;
+        height: 80px;
+    }
+}
+
 @media (max-width: 768px) {
-    h1 { 
-        font-size: 2rem; 
+    h1.main-title {
+        font-size: 2rem;
     }
-    
-    .logos { 
-        gap: 1rem; 
+
+    h2 {
+        font-size: 1.5rem;
     }
-    
-    .logo-box { 
-        min-width: 120px; 
-        height: 80px; 
-        font-size: 1rem; 
+
+    .logos-left,
+    .logos-right {
+        gap: 0.5rem;
     }
-    
-    nav ul { 
-        gap: 1rem; 
+
+    .logo-box {
+        min-width: 100px;
+        height: 70px;
+        padding: 0.8rem;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .photo-placeholder {
+        width: 150px;
+        height: 150px;
+        font-size: 2.5rem;
+    }
+
+    .mission-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5rem;
+    }
+
+    .mission-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .mission-toggle {
+        padding: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .mission-number {
+        font-size: 1.5rem;
+    }
+
+    .mission-toggle-content {
+        flex-wrap: wrap;
+    }
+
+    .mission-content-inner {
+        padding: 1.5rem;
+    }
+
+    .content-box {
+        padding: 1.5rem;
+    }
+
+    .bilan-content {
+        padding: 1.5rem;
+    }
+
+    .bilan-global {
+        padding: 2rem 1.5rem;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1.main-title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logos-left,
+    .logos-right {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .logo-box {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .mission-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .mission-badge,
+    .mission-badge-accordion {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mission-toggle {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .mission-number {
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
+
+    .competence-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .bilan-global h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Amélioration de l'accessibilité */
+a:focus,
+button:focus {
+    outline: 2px solid #0055A4;
+    outline-offset: 2px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mission-item,
+.info-card,
+.bilan-competence,
+.mission-accordion {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Print styles */
+@media print {
+    nav,
+    footer {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    section {
+        padding: 1rem;
+        box-shadow: none;
+    }
+
+    .mission-item,
+    .bilan-competence {
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
     }
 }
