@@ -342,6 +342,95 @@ h5 {
     background: linear-gradient(135deg, #f8f9fa, #e9ecef);
 }
 
+/* Accordéons pour page entreprise */
+.accordion-section {
+    margin-bottom: 2rem;
+}
+
+.accordion-toggle {
+    width: 100%;
+    background: linear-gradient(135deg, #0055A4, #0072CE);
+    color: white;
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.accordion-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(0,85,164,0.3);
+}
+
+.accordion-arrow {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    margin-left: 1rem;
+}
+
+.accordion-toggle.active .accordion-arrow {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.accordion-content.active {
+    max-height: 10000px;
+    transition: max-height 1s ease;
+}
+
+.accordion-content-inner {
+    padding: 2rem;
+}
+
+.subsection {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #0072CE;
+}
+
+.subsection h3 {
+    color: #0055A4;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.subsection h4 {
+    color: #0072CE;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.subsection p {
+    margin-bottom: 0.8rem;
+    line-height: 1.7;
+}
+
+.subsection ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.subsection li {
+    margin-bottom: 0.5rem;
+}
+
 /* Missions - Accordéons */
 .mission-accordion {
     margin-bottom: 2rem;
@@ -746,6 +835,15 @@ footer p {
     section {
         padding: 2rem 1rem;
     }
+
+    .accordion-toggle {
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .accordion-content-inner {
+        padding: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -807,6 +905,15 @@ footer p {
     .bilan-global h3 {
         font-size: 1.5rem;
     }
+
+    .accordion-toggle {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    
+    .accordion-arrow {
+        font-size: 1.2rem;
+    }
 }
 
 /* Amélioration de l'accessibilité */
@@ -831,7 +938,8 @@ button:focus {
 .mission-item,
 .info-card,
 .bilan-competence,
-.mission-accordion {
+.mission-accordion,
+.accordion-section {
     animation: fadeIn 0.6s ease-out;
 }
 
