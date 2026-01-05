@@ -52,7 +52,7 @@
                 <div class="mission-toggle-content">
                     <span class="mission-number">01</span>
                     <div class="mission-title-wrapper">
-                        <div>OSON 37 - Mise à jour des KB et SEP en autonomie</div>
+                        <div>OSON XX - Mise à jour des KB et SEP en autonomie</div>
                     </div>
                     <span class="mission-badge-accordion">Maintenance préventive</span>
                     <span class="mission-arrow">▼</span>
@@ -71,17 +71,18 @@
                         <h4>🔧 Tâches réalisées et méthodologie</h4>
                         
                         <h5>Phase de préparation :</h5>
+                        Premièrement on ouvre la tache de travaux avec la MOA dans l'outil IDRT (Interface de Demande et de Réalisation de Travaux).
                         <ul>
                             <li>Préparation d'une clé USB sécurisée préalablement scannée avec SEP à jour</li>
                             <li>Installation de l'outil PAS-PAS (Poste Autonome Sécurisé - Procédure Automatisée de Sécurisation) sur la clé USB</li>
-                            <li>Création d'un tableau Excel recensant l'ensemble des actifs à traiter (environ 50 postes)</li>
+                            <li>Création d'un tableau Excel recensant l'ensemble des actifs à traiter </li>
                             <li>Planification des interventions terrain en fonction de l'accessibilité des postes et des autorisations nécessaires</li>
-                            <li>Récupération des identifiants de connexion et du mode opératoire (MODOP)</li>
+                            <li>Récupération des identifiants de connexion avec KeePass et du mode opératoire (MODOP) sur le logithèque DIGIT en ligne</li>
                         </ul>
 
                         <h5>Phase terrain :</h5>
                         <ul>
-                            <li>Déplacement vers chaque poste identifié dans le planning</li>
+                            <li>Déplacement vers chaque poste identifié dans le tableau Excel</li>
                             <li>Contrôle de la version Windows pour adapter l'opération (certaines versions nécessitent uniquement un audit)</li>
                             <li>Connexion au poste avec les identifiants fournis</li>
                             <li>Insertion de la clé USB et exécution du script PAS-PAS</li>
@@ -93,9 +94,9 @@
 
                         <h5>Phase de clôture :</h5>
                         <ul>
-                            <li>Renseignement du fichier MODOP avec le statut de chaque intervention</li>
-                            <li>Dépôt des fichiers .xml d'audit dans le répertoire partagé de la cellule informatique</li>
-                            <li>Clôture de l'OSON (Ordre de Service Opérationnel Nucléaire) dans l'outil IDRT (Interface de Demande et de Réalisation de Travaux)</li>
+                            <li>Renseignement du fichier MODOP</li>
+                            <li>Dépôt des fichiers .xml d'audit et du tableau Excel dans le répertoire partagé de la cellule informatique</li>
+                            <li>Clôture de l'OSON (Opération de maintenance préventive) dans l'outil IDRT (Interface de Demande et de Réalisation de Travaux)</li>
                             <li>Transmission du compte-rendu d'intervention au tuteur</li>
                         </ul>
                     </div>
@@ -129,7 +130,7 @@
                     <div class="mission-section">
                         <h4>📊 Traces et preuves</h4>
                         <ul>
-                            <li>Fichier Excel de suivi des interventions avec statut de chaque poste</li>
+                            <li>Fichier Excel de suivi des interventions avec la situation de chaque poste</li>
                             <li>Fichiers .xml d'audit générés par l'outil PAS-PAS</li>
                             <li>Mode opératoire complété et validé</li>
                             <li>Clôture de l'OSON dans l'IDRT avec traçabilité des actions</li>
@@ -140,26 +141,23 @@
                         <h4>💡 Analyse réflexive et autoévaluation</h4>
                         
                         <h5>Ce que j'ai appris :</h5>
-                        <p>Cette mission m'a permis de comprendre l'importance de la maintenance préventive dans un environnement industriel critique. J'ai découvert les contraintes spécifiques liées aux postes isolés qui, bien que déconnectés du réseau, doivent maintenir un niveau de sécurité élevé. L'utilisation de l'outil PAS-PAS m'a familiarisée avec les procédures automatisées de mise à jour sécurisée.</p>
+                        <p>Cette mission m'a permis de comprendre l'importance des opérations de maintenance préventive dans un environnement industriel critique. J'ai compris l'importance de sécuriser les postes sur un réseau dit "isolé" dans un milieu indistriel critique. L'utilisation de l'outil PAS-PAS m'a familiarisée avec les procédures automatisées de mise à jour sécurisée.</p>
 
                         <h5>Difficultés rencontrées :</h5>
                         <ul>
-                            <li><strong>Accessibilité des postes :</strong> Certains postes nécessitaient des autorisations d'accès spécifiques et se trouvaient dans des zones éloignées, ce qui a demandé une planification rigoureuse</li>
+                            <li><strong>Accessibilité des postes :</strong> Certains postes nécessitaient des autorisations d'accès spécifiques et se trouvaient dans des zones éloignées</li>
                             <li><strong>Diversité des configurations :</strong> Les versions de Windows variaient d'un poste à l'autre, nécessitant une adaptation de la procédure</li>
-                            <li><strong>Temps d'exécution :</strong> Les mises à jour pouvaient prendre plusieurs heures sur certains postes anciens</li>
+                            <li><strong>Temps d'exécution :</strong> Les mises à jour pouvaient prendre plus ou moins de temps avec parfois des erreurs</li>
                         </ul>
 
                         <h5>Solutions mises en place :</h5>
-                        <p>J'ai anticipé ces difficultés en effectuant une phase de préparation minutieuse avec identification préalable des contraintes d'accès. J'ai également prévu des créneaux suffisamment larges pour les postes nécessitant des temps d'intervention plus longs. Pour les problèmes techniques rencontrés (échec de mise à jour, erreurs de script), j'ai systématiquement documenté les incidents et sollicité l'expertise de mon tuteur lorsque nécessaire.</p>
+                        <p>J'ai anticipé ces difficultés en effectuant une phase de préparation avec un tableau Excel et en reprenant les archives des anciennes opérations réalisées auparavant. J'ai également prévu des créneaux suffisamment larges pour les postes nécessitant des temps d'intervention plus longs. Pour les problèmes techniques rencontrés (échec de mise à jour, erreurs de script), j'ai relevé les incidents et sollicité la cellule informatique quand c'était nécessaire.</p>
 
                         <h5>Évolution de mon autonomie :</h5>
-                        <p>Cette mission a marqué un tournant dans mon alternance car c'était la première fois que je menais une opération de A à Z en totale autonomie. J'ai progressivement gagné en confiance dans ma capacité à gérer les imprévus, à respecter les procédures de sécurité et à assurer la traçabilité des interventions. J'ai également développé ma rigueur dans la documentation, essentielle dans le contexte nucléaire.</p>
+                        <p>Cette mission m'a permis de gagner en autonomie, c'était la première fois que je réalisais une opération de maintenance préventive en autonomie. J'ai pu gagné en confiance dans ma capacité à gérer les imprévus, à respecter les procédures et à assurer la traçabilité des interventions. J'ai également développé un sens critique dans la documentation, essentielle dans le contexte nucléaire.</p>
 
                         <h5>Positionnement sur le niveau de maîtrise :</h5>
-                        <p>Je considère avoir atteint un niveau satisfaisant sur les apprentissages critiques ciblés. Je suis désormais capable de mener des opérations de maintenance préventive de manière autonome en respectant les bonnes pratiques de cybersécurité. Cependant, je souhaite encore approfondir mes connaissances sur le dépannage avancé en cas de dysfonctionnement majeur lors des mises à jour.</p>
-
-                        <h5>Réinvestissement dans d'autres contextes :</h5>
-                        <p>Les compétences acquises lors de cette mission sont transférables à d'autres environnements nécessitant des interventions sur des systèmes déconnectés ou en zone sécurisée. La méthodologie de planification, d'intervention et de reporting peut être appliquée à toute opération de maintenance informatique structurée.</p>
+                        <p>Dans le cadre de ma mission, j'ai atteint un niveau satisfaisant dans les compétences critiques ciblées. Je suis capable de refaire cette opération de maintenance préventive en autonomie sans demander des contacts en cas de problème avec certains postes. </p>
                     </div>
                 </div>
             </div>
@@ -200,9 +198,9 @@
                         <h5>Mise en place de l'infrastructure réseau :</h5>
                         <ul>
                             <li>Conception du cheminement du câblage depuis la caméra COPAT jusqu'au poste de supervision</li>
-                            <li>Raccordement des caméras à l'infrastructure réseau composée de switches, serveurs et cœur de réseau</li>
+                            <li>Raccordement des caméras à l'infrastructure réseau composée de switch, serveurs et cœur de réseau</li>
                             <li>Coordination avec les équipes terrain pour l'installation physique des caméras en zone contrôlée (zones exposées aux radiations, nécessitant des habilitations spécifiques)</li>
-                            <li>Vérification de la bonne remontée des équipements dans l'infrastructure</li>
+                            <li>Vérification de la bonne remontée des équipements dans l'infrastructure grâce aux postes de supervision</li>
                         </ul>
 
                         <h5>Supervision et validation :</h5>
@@ -244,11 +242,9 @@
                     <div class="mission-section">
                         <h4>📊 Traces et preuves</h4>
                         <ul>
-                            <li>Schémas d'architecture réseau avec intégration des caméras COPAT</li>
+                            <li>Schémas d'architecture réseau avec intégration des caméras COPAT sur l'outil R3WEB</li>
                             <li>Plan d'adressage IP avec attribution des caméras</li>
-                            <li>Captures d'écran des postes de supervision montrant les flux vidéo actifs</li>
                             <li>Rapport de mise en service transmis au plateau COPAT</li>
-                            <li>Documentation de configuration des caméras</li>
                         </ul>
                     </div>
 
@@ -256,26 +252,25 @@
                         <h4>💡 Analyse réflexive et autoévaluation</h4>
                         
                         <h5>Ce que j'ai appris :</h5>
-                        <p>Cette mission m'a permis de découvrir les spécificités des systèmes de supervision industrielle et l'importance de la qualité de service dans un contexte opérationnel critique. J'ai compris le fonctionnement d'un réseau dédié à la supervision vidéo et les contraintes liées à la transmission de flux temps réel. La coordination avec les équipes terrain m'a également sensibilisée aux enjeux de sécurité radiologique dans le secteur nucléaire.</p>
-
+                        <p>Cette mission m'a permis de découvrir les systèmes de supervision industrielle et l'importance de la qualité de service afin que le service puisse voir en temps réel avec une bonne qualité d'image l'avancement des travaux. J'ai également appris la communication et la coordination avec un agent sur le terrain afin de savoir si la caméra est fonctionnelle sous tous ses aspects.  </p>
                         <h5>Difficultés rencontrées :</h5>
                         <ul>
-                            <li><strong>Limitation d'accès :</strong> Ne pouvant pas installer moi-même les caméras en zone contrôlée faute d'habilitation, j'ai dû coordonner mon travail avec les techniciens habilités, ce qui nécessitait une communication claire et précise</li>
-                            <li><strong>Qualité du flux vidéo :</strong> Sur une des caméras, le flux présentait des saccades nécessitant un diagnostic réseau (bande passante, latence)</li>
-                            <li><strong>Complexité de l'infrastructure :</strong> Comprendre l'architecture réseau multi-niveaux (caméra → switch → serveur → cœur de réseau → supervision) demandait une vision globale du système</li>
+                            <li><strong>Limitation d'accès :</strong> Ne pouvant pas installer moi-même les caméras en zone contrôlée (pas d'autorisation d'accès), j'ai pu vérifier que les caméras installées étaient opérationnelles en assurant la coordination et la communication avec un agent sur le terrain.</li>
+                            <li><strong>Qualité du flux vidéo :</strong> Sur une des caméras, l'image en temps réel n'était pas de tres bonne qualité à cause de la latence</li>
+                            <li><strong>Complexité de l'infrastructure :</strong> Comprendre l'architecture afin de réaliser un cheminement optical pour ne pas que la caméra ait des problèmes de latence. </li>
                         </ul>
 
                         <h5>Solutions mises en place :</h5>
-                        <p>Pour pallier la limitation d'accès en zone, j'ai préparé des instructions détaillées et des schémas de câblage clairs pour les techniciens habilités. Pour résoudre le problème de qualité vidéo, j'ai effectué des tests de bande passante et ajusté les paramètres de compression de la caméra. J'ai également sollicité l'aide de mon tuteur pour mieux comprendre l'architecture réseau globale.</p>
+                        <p>Le fait de ne pas avoir accès n'est pas un problème car pour cette mission il faut obligatoirement un agent présent aux postes de supervision pour vérifier en temps réel le fonctionnement de la caméra. Pour réaliser le cheminement avec l'architecture du site je me suis reportée sur l'outil R3WEB qui comprend tous les cheminements de nos équipements.</p>
 
                         <h5>Évolution de mon autonomie et de mes méthodes :</h5>
-                        <p>Cette mission m'a appris à travailler en collaboration avec différents corps de métiers et à adapter ma communication technique en fonction de mes interlocuteurs. J'ai développé une approche méthodique de déploiement d'équipements : configuration préalable, test hors site, installation, vérification post-installation. J'ai également progressé dans ma capacité à diagnostiquer des problèmes réseau.</p>
+                        <p>Cette mission m'a appris à communiquer avec un langage technique précis et clair. J'ai également progressé dans ma capacité à diagnostiquer des problèmes réseau. J'ai aussi progressé dans les cheminements de câblages pour optimiser le chemin et aussi de mettre à jour l'outil R3WEB.</p>
 
                         <h5>Positionnement sur le niveau de maîtrise :</h5>
-                        <p>Je considère avoir un niveau satisfaisant sur le déploiement de systèmes de transmission vidéo. Je suis à l'aise avec la configuration réseau des caméras et la vérification du bon fonctionnement. Cependant, je souhaite approfondir mes connaissances sur l'optimisation de la qualité de service (QoS) pour les flux vidéo et sur le dépannage avancé des infrastructures de supervision.</p>
+                        <p>J'ai acquis un niveau plutôt satisfaisant sur l'expression d'un besoin d'une caméra, du cheminement jusqu'à la vérification du bon fonctionnement. Cependant, j'aimerais approfondir mes connaissances sur l'optimisation de la qualité de service (QoS) pour les flux vidéo et sur le dépannage des caméras.</p>
 
                         <h5>Réinvestissement dans d'autres contextes :</h5>
-                        <p>Les compétences acquises sur cette mission sont applicables à tout déploiement de systèmes IoT, de vidéosurveillance ou de systèmes de contrôle industriel nécessitant des flux temps réel. La méthodologie de test et de validation peut être transposée à d'autres types d'équipements réseau.</p>
+                        <p>Les compétences acquises sur cette mission sont applicables sur différentes de systèmes Informatiques et Télécoms, de vidéosurveillance. La méthodologie du cheminement jusqu'à la validation est similaire sur d'autres équipements informatiques et Télécoms.</p>
                     </div>
                 </div>
             </div>
@@ -302,7 +297,7 @@
                         <p><strong>Objectifs :</strong></p>
                         <ul>
                             <li>Vérifier la conformité des installations réalisées par les sous-traitants (baies informatiques, hauts-parleurs, téléphones de couloir)</li>
-                            <li>Recenser précisément l'emplacement et la configuration des équipements (notamment les interphones dans le cadre de la préparation d'une migration de ligne)</li>
+                            <li>Recenser l'emplacement et la configuration des équipements (notamment les interphones dans le cadre de la préparation d'une migration de ligne)</li>
                             <li>Assurer la traçabilité et la documentation des infrastructures pour faciliter les interventions futures</li>
                         </ul>
                     </div>
@@ -315,7 +310,7 @@
                             <li><strong>Phase préparatoire :</strong>
                                 <ul>
                                     <li>Récupération du cahier des charges et du devis validé</li>
-                                    <li>Réception des plans initiaux et des plans rectifiés par l'ingénieur spécialisé</li>
+                                    <li>Réception des plans initiaux et des plans rectifiés par un dessinateur spécialisé</li>
                                     <li>Transmission des plans mis à jour aux sous-traitants pour réalisation</li>
                                 </ul>
                             </li>
@@ -335,24 +330,16 @@
                                     <li>Transmission des non-conformités aux sous-traitants par e-mail avec demande de correction sous délai</li>
                                     <li>Validation du paiement si l'installation est conforme au devis</li>
                                     <li>Planification d'un second audit après correction si nécessaire</li>
+                                    <li>Transmission des plans au dessinateur s'il y a des rectifications à faire suite à une visite terrain</li>
                                 </ul>
                             </li>
                         </ul>
 
-                        <h5>Audit de recensement pour migration :</h5>
-                        <ul>
-                            <li>Audit exhaustif de tous les bâtiments du CNPE pour localiser les interphones</li>
-                            <li>Relevé précis : localisation exacte, numéro d'identification, baie de raccordement, port de connexion</li>
-                            <li>Création d'une base de données géolocalisée des équipements</li>
-                            <li>Documentation photographique et schémas de raccordement</li>
-                            <li>Préparation des fiches d'intervention pour la migration</li>
-                        </ul>
-
                         <h5>Exemples d'audits réalisés :</h5>
                         <ul>
-                            <li><strong>Infirmerie avec PEA :</strong> Vérification de l'installation des équipements de communication d'urgence</li>
-                            <li><strong>HNP avec Jérôme :</strong> Audit des infrastructures du bâtiment HNP</li>
-                            <li><strong>Interphones bâtiment FLA 3 avec Jérôme et Fred :</strong> Recensement complet des interphones en prévision de la migration</li>
+                            <li><strong>Audit d'un batiment médical</strong> Vérification de l'installation des équipements de communication d'urgence</li>
+                            <li><strong>Audit d'un nouveau batiment industriel</strong> Audit de toutes les infrastrucures du batiment, interphones, borne WIFI, borne DECT..</li>
+                            <li><strong>Interphones bâtiment FLA 3</strong> Recensement complet des interphones en prévision de la migration</li>
                         </ul>
                     </div>
 
@@ -386,12 +373,11 @@
                     <div class="mission-section">
                         <h4>📊 Traces et preuves</h4>
                         <ul>
-                            <li>Rapports d'audit avec relevé exhaustif des équipements</li>
+                            <li>Rapports d'audit avec relevé des équipements</li>
                             <li>Plans annotés avec corrections et remarques</li>
                             <li>Photographies des installations conformes et non conformes</li>
                             <li>E-mails de suivi avec les sous-traitants</li>
                             <li>Base de données géolocalisée des interphones du CNPE</li>
-                            <li>Fiches de validation de conformité signées</li>
                         </ul>
                     </div>
 
@@ -399,24 +385,23 @@
                         <h4>💡 Analyse réflexive et autoévaluation</h4>
                         
                         <h5>Ce que j'ai appris :</h5>
-                        <p>Cette mission m'a fait prendre conscience de l'importance capitale de la documentation dans un environnement industriel. Un plan conforme et à jour permet d'intervenir rapidement et efficacement en cas de panne, ce qui est crucial dans une centrale nucléaire où la disponibilité des systèmes de communication et d'information est essentielle à la sûreté. J'ai également appris à gérer la relation avec des sous-traitants et à faire respecter un cahier des charges.</p>
+                        <p>Cette mission m'a fait prendre conscience de l'importance d'avoir une documentation conforme à la réalité terrain. Un plan conforme et à jour permet d'intervenir rapidement et efficacement en cas de panne, ce qui est crucial dans une centrale nucléaire où la disponibilité des systèmes de communication et d'information est essentielle à la sûreté. J'ai également appris à gérer la relation avec des sous-traitants et à faire respecter un cahier des charges.</p>
 
                         <h5>Difficultés rencontrées :</h5>
                         <ul>
                             <li><strong>Attention soutenue nécessaire :</strong> Lors des audits, il faut être extrêmement concentré pour ne rien oublier. Une erreur ou un oubli peut avoir des conséquences importantes lors d'interventions futures</li>
-                            <li><strong>Gestion des écarts :</strong> Face à des installations non conformes, il fallait évaluer la criticité de l'écart et décider s'il était acceptable ou s'il nécessitait une correction immédiate</li>
-                            <li><strong>Coordination avec les sous-traitants :</strong> Certains sous-traitants étaient réticents à retourner sur site pour corriger des détails qu'ils considéraient mineurs (étiquettes manquantes, par exemple)</li>
-                            <li><strong>Exhaustivité du recensement :</strong> Pour l'audit des interphones sur l'ensemble du CNPE, le volume d'équipements à recenser était important et nécessitait une organisation rigoureuse</li>
+                            <li><strong>Gestion des écarts :</strong> Suite à des plans non conformes à la réalité du terrain, il fallait estimer s'il fallait redemander à ce qu'il y ait un changement imédiat</li>
+                            <li><strong>Coordination avec les sous-traitants :</strong> On est toujours obligé de vérifier la conformité du travail réalisé par les sous-traitant car il peut y avoir des oublis qu'ils pensent mineurs. (étiquettes manquantes, par exemple)</li>
                     </ul>
 
                     <h5>Solutions mises en place :</h5>
-                    <p>Pour maintenir ma concentration, j'ai adopté une méthodologie systématique : progression méthodique pièce par pièce, utilisation d'une checklist, double vérification des zones complexes. Pour la gestion des écarts, j'ai appris à consulter mon tuteur pour évaluer la criticité et à argumenter de manière constructive avec les sous-traitants en expliquant les enjeux de sûreté et de maintenance. Pour le recensement exhaustif, j'ai mis en place un fichier Excel structuré permettant un suivi efficace de l'avancement.</p>
+                    <p>Pour maintenir ma concentration, j'ai adopté une méthodologie précise ; réalisé l'audit pièce par pièce et système par système donc d'abord les prises réseaux dans chaque pièce puis les bornes WIFI dans chaque pièce, ainsi de suite. Pour la coordination avec les sous-traitant j'ai appris à vérifier la conformité d'un plan, les manques, les écarts qu'il faudra ajuster et à transmettre par mail avec eux.</p>
 
                     <h5>Évolution de mon autonomie et de mes méthodes :</h5>
-                    <p>Au début, j'effectuais les audits en binôme avec Jérôme ou Fred, ce qui me permettait de comprendre la méthodologie et d'acquérir les réflexes. Progressivement, j'ai gagné en autonomie et en confiance. J'ai développé mon sens de l'observation et ma capacité à identifier rapidement les anomalies. J'ai également amélioré ma communication professionnelle, notamment dans la rédaction des rapports d'audit et des e-mails de suivi.</p>
+                    <p>Au début, j'effectuais les audits en binôme ce qui me permettait de comprendre la méthodologie et d'acquérir les réflexes. Progressivement, j'ai gagné en autonomie et en confiance. J'ai développé mon sens de l'observation et ma capacité à identifier rapidement les anomalies. J'ai également amélioré ma communication professionnelle, notamment dans la rédaction des rapports d'audit et des e-mails de suivi.</p>
 
                     <h5>Positionnement sur le niveau de maîtrise :</h5>
-                    <p>Je considère avoir atteint un bon niveau de maîtrise sur la réalisation d'audits terrain. Je suis désormais capable de mener un audit de conformité en autonomie, de produire une documentation de qualité et de gérer le suivi avec les sous-traitants. Je reste toutefois vigilante sur la nécessité de maintenir un niveau de concentration élevé, car c'est une compétence qui demande une vigilance constante.</p>
+                    <p>Je considère avoir atteint un bon niveau de maîtrise sur la réalisation d'audits terrain. Je suis désormais capable de mener un audit de conformité en autonomie, de produire une documentation de qualité et de gérer le suivi avec les sous-traitants.</p>
 
                     <h5>Importance de la mission :</h5>
                     <p>Cette mission m'a fait comprendre que le travail d'audit n'est pas une simple "vérification administrative" mais un élément essentiel de la qualité de service et de la sûreté. Des plans conformes et à jour sont indispensables pour garantir des interventions rapides et sûres, particulièrement dans un contexte nucléaire où chaque minute compte en cas d'incident.</p>
