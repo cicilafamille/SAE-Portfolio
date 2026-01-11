@@ -286,22 +286,13 @@ h5 {
 }
 
 .profile-photo {
-    text-align: center;
-}
-
-.photo-placeholder {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #0055A4, #0072CE);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0 auto;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Pour faire un cercle */
+    object-fit: cover; /* Pour que l'image remplisse bien le cercle */
+    border: 3px solid #0066cc; /* Bordure bleue EDF (optionnel) */
+    margin: 20px auto;
+    display: block;
 }
 
 .profile-content h2 {
