@@ -84,22 +84,22 @@
 
                         <h5>Phase terrain :</h5>
                         <ul>
-                            <li>Déplacement vers chaque poste identifié dans le tableau Excel</li>
+                            <li>Déplacement vers chaque poste identifié dans le tableau Excel Cf.trace1</li>
                             <li>Contrôle de la version Windows pour adapter l'opération (certaines versions nécessitent uniquement un audit)</li>
                             <li>Connexion au poste avec les identifiants fournis</li>
                             <li>Insertion de la clé USB et exécution du script PAS-PAS</li>
                             <li>Saisie des informations requises par le script (identification du poste, type d'opération)</li>
                             <li>Réalisation de la mise à jour des KB, du SEP et de l'audit de sécurité selon le profil du poste</li>
                             <li>Vérification du bon déroulement de l'opération via les logs générés</li>
-                            <li>Récupération des fichiers .xml d'audit générés automatiquement</li>
+                            <li>Récupération des fichiers .xml d'audit générés automatiquement Cf.trace2</li>
                         </ul>
 
                         <h5>Phase de clôture :</h5>
                         <ul>
                             <li>Renseignement du fichier MODOP (Mode opératoire)</li>
-                            <li>Dépôt des fichiers .xml d'audit et du tableau Excel dans le répertoire partagé de la cellule informatique</li>
-                            <li>Clôture de l'OSON (Opération de maintenance préventive) dans l'outil IDRT (Interface de Demande et de Réalisation de Travaux)</li>
-                            <li>Transmission du compte-rendu d'intervention au tuteur</li>
+                            <li>Dépôt des fichiers .xml d'audit et du tableau Excel dans le répertoire partagé de la cellule informatique Cf.trace1 et Cf.trace2</li>
+                            <li>Clôture de l'OSON (Opération de maintenance préventive) dans l'outil IDRT (Interface de Demande et de Réalisation de Travaux) Cf.trace4</li>
+                            <li>Transmission du compte-rendu d'intervention au tuteur et au coordinateur Cf.trace3</li>
                         </ul>
                     </div>
 
@@ -134,9 +134,13 @@
                         <p>Je ne peux pas montrer les preuves par faute de confidentialité, les documents ne doivent pas sortir de l'entreprise EDF.</p>
                         <ul>
                             <li>Trace 1 : Fichier Excel de suivi des interventions avec la situation de chaque poste</li>
+                            <p>Exemple d'un fichier Excel pour cette opération de maintenance : </p>
+                            <img src="exemple_fichier_excel.png" alt="exemple fichier excel" width="800">
                             <li>Trace 2 : Fichiers .xml d'audit générés par l'outil PAS-PAS</li>
-                            <li>Trace 3 : Mode opératoire complété et validé</li>
+                            <li>Trace 3 : Compte rendu au tuteur et au coordinateur par mail</li>
+                            <img src="exemple_mail_oson.png" alt="exemple mail oson" width="800">
                             <li>Trace 4 : Clôture de l'OSON dans l'IDRT avec traçabilité des actions</li>
+
                         </ul>
                     </div>
 
@@ -183,7 +187,7 @@
                 <div class="mission-content-inner">
                     <div class="mission-section">
                         <h4>📋 Contexte et objectifs</h4>
-                        <p>Durant les arrêts de tranche de la centrale nucléaire de Flamanville, notamment lors du remplacement des générateurs de vapeur, il est nécessaire de superviser en temps réel les opérations sensibles comme le rechargement du combustible. Les caméras COPAT (Contrôle et Observation des Phases d'Arrêt de Tranche) permettent de transmettre des images vidéo vers un local de supervision, d'enregistrer et de visualiser les opérations en cours.</p>
+                        <p>Durant les arrêts de tranche de la centrale nucléaire de Flamanville, notamment lors du remplacement des générateurs de vapeur, il est nécessaire de superviser en temps réel les opérations sensibles comme le rechargement du combustible. Les caméras COPAT (Centre Opérationnel de Pilotage d'Arrêt de Tranche) permettent de transmettre des images vidéo vers un local de supervision, d'enregistrer et de visualiser les opérations en cours.</p>
                         <p><strong>Objectif :</strong> Configurer et déployer des caméras COPAT pour assurer la supervision en temps réel des chantiers d'arrêt de tranche, en garantissant la qualité et la fluidité des images transmises.</p>
                     </div>
 
@@ -193,7 +197,7 @@
                         <h5>Configuration des caméras :</h5>
                         <ul>
                             <li>Réception de la CEB (Cahier d'Expression de Besoin) pour l'installation de caméras COPAT de la part de la MOA (Maîtrise d'Ouvrage)</li>
-                            <li>Configuration de deux caméras COPAT en leur attribuant une adresse IP selon le plan d'adressage du réseau COPAT</li>
+                            <li>Configuration de deux caméras COPAT en leur attribuant une adresse IP selon le plan d'adressage du réseau COPAT Cf.trace2</li>
                             <li>Paramétrage des options de capture vidéo (résolution, framerate, qualité)</li>
                             <li>Test de connectivité réseau et vérification de l'accessibilité IP</li>
                         </ul>
@@ -201,7 +205,7 @@
                         <h5>Mise en place de l'infrastructure réseau :</h5>
                         <ul>
                             <li>Conception du cheminement du câblage depuis la caméra COPAT jusqu'au poste de supervision Cf.trace1</li>
-                            <li>Raccordement des caméras à l'infrastructure réseau composée de switch, serveurs et cœur de réseau</li>
+                            <li>Raccordement des caméras à l'infrastructure réseau composée de switch, serveurs et cœur de réseau Cf.trace1</li>
                             <li>Coordination avec les équipes terrain pour l'installation physique des caméras en zone contrôlée (zones exposées aux radiations, nécessitant des habilitations spécifiques)</li>
                             <li>Vérification de la bonne remontée des équipements dans l'infrastructure grâce aux postes de supervision</li>
                         </ul>
@@ -245,8 +249,10 @@
                     <div class="mission-section">
                         <h4>📊 Traces et preuves</h4>
                         <ul>
+                            <p>Je ne peux pas montrer les preuves par faute de confidentialité, les documents ne doivent pas sortir de l'entreprise EDF.</p>
                             <li>Trace 1 : Schémas d'architecture réseau avec intégration des caméras COPAT sur l'outil R3WEB</li>
-                            <img src="fonction_R3WEB.png" alt="fonction_R3WEB">
+                            <p>Exemple d'une fonction R3 Web du cheminement de la caméra COPAT jusqu'au poste de supervision : </p>
+                            <img src="fonction_R3WEB.png" alt="fonction_R3WEB" width="900">
                             <li>Trace 2 : Plan d'adressage IP avec attribution des caméras</li>
                             <li>Trace 3 : Rapport de mise en service transmis au plateau COPAT</li>
                         </ul>
@@ -319,7 +325,7 @@
                                 <ul>
                                     <li>Visite complète du bâtiment concerné avec les plans en main</li>
                                     <li>Vérification point par point de chaque équipement installé</li>
-                                    <li>Relevé systématique : nom de l'équipement, numéro de série, port de connexion, présence des étiquettes d'identification</li>
+                                    <li>Relevé systématique : nom de l'équipement, numéro de série, port de connexion, présence des étiquettes d'identification Cf.trace2</li>
                                     <li>Contrôle de la conformité du câblage et des raccordements</li>
                                     <li>Photographie des installations pour documentation</li>
                                     <li>Identification des écarts entre le plan et la réalité (équipements manquants, étiquetage absent, erreurs de positionnement)</li>
@@ -327,11 +333,11 @@
                             </li>
                             <li><strong>Phase de suivi :</strong>
                                 <ul>
-                                    <li>Rédaction d'un rapport d'audit détaillé</li>
-                                    <li>Transmission des non-conformités aux sous-traitants par e-mail avec demande de correction sous délai</li>
+                                    <li>Rédaction d'un rapport d'audit détaillé Cf.trace1</li>
+                                    <li>Transmission des non-conformités aux sous-traitants par e-mail avec demande de correction sous délai Cf.trace3</li>
                                     <li>Validation du paiement si l'installation est conforme au devis</li>
                                     <li>Planification d'un second audit après correction si nécessaire</li>
-                                    <li>Transmission des plans au dessinateur s'il y a des rectifications à faire suite à une visite terrain</li>
+                                    <li>Transmission des plans au dessinateur s'il y a des rectifications à faire suite à une visite terrain Cf.trace2</li>
                                 </ul>
                             </li>
                         </ul>
@@ -374,6 +380,7 @@
                     <div class="mission-section">
                         <h4>📊 Traces et preuves</h4>
                         <ul>
+                            <p>Je ne peux pas montrer les preuves par faute de confidentialité, les documents ne doivent pas sortir de l'entreprise EDF.</p>
                             <li>Trace 1 : Rapports d'audit avec relevé des équipements</li>
                             <li>Trace 2 : Plans annotés avec corrections et remarques et photographies des installations conformes et non conformes</li>
                             <li>Trace 3 : E-mails de suivi avec les sous-traitants</li>
